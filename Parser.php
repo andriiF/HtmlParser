@@ -15,7 +15,7 @@ class Parser {
         switch ($this->action) {
             case "parse":
                 $this->doParser($url);
-                print "end of parsing!@ " . realpath("result.csv");
+                print "End of parsing!@ link to file -->" . realpath("result.csv");
                 break;
             case "report":
                 $this->doParser($url);

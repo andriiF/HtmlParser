@@ -7,10 +7,12 @@ while (true) {
     $handle = fopen("php://stdin", "r");
     $string = strtolower(fgets($handle));
     $string = trim($string);
+    $file = fopen("result.csv", "w");
+    fclose($file);
+    $replaced = preg_replace('/\s\s+/', ' ', $string);
     if ($string == "exit") {
         exit();
     }
-    $replaced = preg_replace('/\s\s+/', ' ', $string);
     $phrase = explode(" ", $replaced);
     $parser = new Parser($phrase[0]);
     if (count($phrase) > 1) {

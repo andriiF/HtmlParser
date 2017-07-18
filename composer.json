@@ -1,0 +1,11 @@
+{
+    "name": "vendor/html-parser",
+    "description": "Html Parser.",
+    "authors": [
+        {
+            "name": "andrii",
+            "email": "andreiif123@gmail.com"
+        }
+    ],
+    "require": {}
+}
